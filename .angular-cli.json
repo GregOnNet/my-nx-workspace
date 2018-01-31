@@ -81,6 +81,12 @@
       "root": "libs/backend/src",
       "test": "../../../test.js",
       "appRoot": ""
+    },
+    {
+      "name": "shop",
+      "root": "libs/shop/src",
+      "test": "../../../test.js",
+      "appRoot": ""
     }
   ]
 }
