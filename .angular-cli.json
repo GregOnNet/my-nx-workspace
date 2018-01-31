@@ -22,6 +22,22 @@
     {
       "project": "apps/app-one/e2e/tsconfig.e2e.json",
       "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "apps/logistics/src/tsconfig.app.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "apps/logistics/e2e/tsconfig.e2e.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "apps/payment/src/tsconfig.app.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "apps/payment/e2e/tsconfig.e2e.json",
+      "exclude": "**/node_modules/**"
     }
   ],
   "test": {
@@ -46,9 +62,34 @@
   },
   "apps": [
     {
-      "name": "app-one",
-      "root": "apps/app-one/src",
-      "outDir": "dist/apps/app-one",
+      "name": "logistics",
+      "root": "apps/logistics/src",
+      "outDir": "dist/apps/logistics",
+      "assets": [
+        "assets",
+        "favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "../../../test.js",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "../../../tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "styles.css"
+      ],
+      "scripts": [],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    },
+    {
+      "name": "payment",
+      "root": "apps/payment/src",
+      "outDir": "dist/apps/payment",
       "assets": [
         "assets",
         "favicon.ico"
@@ -83,8 +124,20 @@
       "appRoot": ""
     },
     {
+      "name": "place-order",
+      "root": "libs/place-order/src",
+      "test": "../../../test.js",
+      "appRoot": ""
+    },
+    {
       "name": "shop",
       "root": "libs/shop/src",
+      "test": "../../../test.js",
+      "appRoot": ""
+    },
+    {
+      "name": "utilities",
+      "root": "libs/utilities/src",
       "test": "../../../test.js",
       "appRoot": ""
     }

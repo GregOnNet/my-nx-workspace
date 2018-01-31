@@ -1,14 +1,14 @@
 {
   "extends": "../../../tsconfig.json",
   "compilerOptions": {
-    "outDir": "../../../dist/out-tsc/apps/app-one",
+    "outDir": "../../../dist/out-tsc/apps/payment",
     "module": "es2015"
   },
   "include": [
     "**/*.ts"
     /* add all lazy-loaded libraries here: "../../../libs/my-lib/index.ts" */
   
-    , "../../../libs/shop/index.ts"
+    , "../../../libs/place-order/index.ts"
 ],
   "exclude": [
     "**/*.spec.ts"

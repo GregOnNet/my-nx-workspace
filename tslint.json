@@ -94,7 +94,8 @@
       true,
       {
         "lazyLoad": [
-          "shop"
+          "shop",
+          "place-order"
         ],
         "allow": []
       }
