@@ -69,6 +69,18 @@
         "dev": "environments/environment.ts",
         "prod": "environments/environment.prod.ts"
       }
+    },
+    {
+      "name": "administration",
+      "root": "libs/administration/src",
+      "test": "../../../test.js",
+      "appRoot": ""
+    },
+    {
+      "name": "backend",
+      "root": "libs/backend/src",
+      "test": "../../../test.js",
+      "appRoot": ""
     }
   ]
 }
